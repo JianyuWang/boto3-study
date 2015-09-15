@@ -11,3 +11,6 @@ queue.send_message(MessageBody='boto3',MessageAttributes={
         'DataType': 'String'
         }
     })
+for i in xrange(0,10):
+    queue.send_message(MessageBody='%s' % i)
+
